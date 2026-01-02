@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 public class JsonUtil {
 	private final ObjectMapper mapper;
 
-	public <T> T objectToObject(String v, Class<T> clz) {
+	public <T> T stringToObject(String v, Class<T> clz) {
 		if (v == null) {
 			return null;
 		}

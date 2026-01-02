@@ -35,7 +35,7 @@ public class UserCacheService {
 		Object raw = redis.opsForHash().get(key, USER);
 		String json = raw != null ? raw.toString() : null;
 
-		return jsonUtil.objectToObject(json, UserCacheDto.class);
+		return jsonUtil.stringToObject(json, UserCacheDto.class);
 	}
 
 	public void deleteUser(long userId) {

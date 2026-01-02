@@ -1,4 +1,4 @@
-package com.example.demo.controller.user;
+package com.example.demo.controller.hash;
 
 import com.example.demo.dto.UserCacheDto;
 import com.example.demo.service.UserCacheService;
@@ -14,9 +14,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(value = "/redis/user")
+@RequestMapping(value = "/redis/hash")
 @RequiredArgsConstructor
-public class UserCacheController {
+public class HashCacheController {
 
 	private final UserCacheService service;
 
